@@ -1,25 +1,15 @@
-import request from 'supertest';
+import request from "supertest";
+import app from "../src/app";
+import { TEMPERATURES_MOCK_UP } from "../src/data/temperaturesMockUp";
 
-import app from '../src/app';
+describe("GET /api/v1/temperature", () => {
+  it("responds with a json message", (done) => {
+    const expectedTemperatures = Object.fromEntries(TEMPERATURES_MOCK_UP);
 
-describe('GET /api/v1', () => {
-  it('responds with a json message', (done) => {
     request(app)
-      .get('/api/v1')
-      .set('Accept', 'application/json')
-      .expect('Content-Type', /json/)
-      .expect(200, {
-        message: 'API - 👋🌎🌍🌏',
-      }, done);
-  });
-});
-
-describe('GET /api/v1/emojis', () => {
-  it('responds with a json message', (done) => {
-    request(app)
-      .get('/api/v1/emojis')
-      .set('Accept', 'application/json')
-      .expect('Content-Type', /json/)
-      .expect(200, ['😀', '😳', '🙄'], done);
+      .get("/api/v1/temperature")
+      .set("Accept", "application/json")
+      .expect("Content-Type", /json/)
+      .expect(200, { temperatures: expectedTemperatures }, done);
   });
 });
