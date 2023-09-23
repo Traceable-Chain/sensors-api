@@ -1,3 +1,4 @@
+import { TEMPERATURES_MOCK_UP } from "../data/temperaturesMockUp";
 import router from "./router";
 
 type Timestamp = string;
@@ -8,15 +9,9 @@ interface TemperatureResponse {
 }
 
 router.get<{}, TemperatureResponse>("/", (_req, res) => {
-  const temperatureMap = new Map([
-    ["2021-01-01T00:00:00.000Z", "-4.5"],
-    ["2021-01-01T00:01:00.000Z", "23.7"],
-    ["2021-01-01T00:02:00.000Z", "22.0"],
-    ["2021-01-01T00:03:00.000Z", "21.5"],
-    ["2021-01-01T00:04:00.000Z", "-3.0"],
-    ["2021-01-01T00:05:00.000Z", "-3.5"],
-    ["2021-01-01T00:06:00.000Z", "4.3"],
-  ]);
+  const temperatureMap = TEMPERATURES_MOCK_UP.map(
+    ([timestamp, temperature]) => [timestamp, temperature]
+  );
 
   const temperatureResponse = {
     temperatures: Object.fromEntries(temperatureMap),
