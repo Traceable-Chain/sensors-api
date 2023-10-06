@@ -5,11 +5,11 @@ And it's deployed in Vercel as serverless functions.
 
 ## Routes
 
-### GET /temperature
+### GET /sensors
 
 Returns the temperature data.
 
-- Route: `api/v1/temperature`
+- Route: `api/v1/sensors`
 
 ## Setup
 
