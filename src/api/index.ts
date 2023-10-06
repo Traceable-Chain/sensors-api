@@ -1,5 +1,5 @@
 import MessageResponse from "../interfaces/MessageResponse";
-import temperature from "./temperature";
+import sensors from "./sensors";
 import router from "./router";
 
 router.get<{}, MessageResponse>("/", (_req, res) => {
@@ -8,6 +8,6 @@ router.get<{}, MessageResponse>("/", (_req, res) => {
   });
 });
 
-router.use("/temperature", temperature);
+router.use("/sensors", sensors);
 
 export default router;
