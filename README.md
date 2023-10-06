@@ -1,6 +1,6 @@
-# Temperature API - Express
+# Sensors API - Express
 
-This is a simple API that returns the some temperature data. It's built with Express and TypeScript.
+This is a simple API that returns the some sensors data. It's built with Express and TypeScript.
 And it's deployed in Vercel as serverless functions.
 
 ## Routes
