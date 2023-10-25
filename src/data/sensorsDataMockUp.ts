@@ -112,7 +112,7 @@ export const SENSORS_DATA_MOCK_UP = [
     timestamp: Date.parse("2021-04-28T12:55:00.000Z"),
     geolocation: {
       lat: 48,
-      lon: 2.3522,
+      lon: 2,
     },
     value: 14,
     // type_: "Temperature" as const,
