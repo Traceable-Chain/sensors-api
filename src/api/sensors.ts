@@ -2,16 +2,16 @@ import { SENSORS_DATA_MOCK_UP } from "../data/sensorsDataMockUp";
 import router from "./router";
 
 type GeoLocation = {
-  latitude: number;
-  longitude: number;
+  lat: number;
+  lon: number;
 };
 
 type SensorType = "temperature" | "humidity" | "pressure";
 
 interface SensorsResponse {
-  sensorId: string;
-  timestamp: string;
-  geoLocation: GeoLocation;
+  sensorId: number;
+  timestamp: number;
+  geolocation: GeoLocation;
   value: number;
   type: SensorType;
 }
