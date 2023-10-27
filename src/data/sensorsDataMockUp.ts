@@ -6,10 +6,8 @@ export const SENSORS_DATA_MOCK_UP = [
       lat: 51,
       lon: 127,
     },
-    value: 10,
-    // type_: "Temperature" as const,
-
-    type_: 1,
+    value: "10",
+    type_: "Temperature" as const,
   },
   {
     id: 2,
@@ -18,10 +16,8 @@ export const SENSORS_DATA_MOCK_UP = [
       lat: 40,
       lon: 74,
     },
-    value: 25,
-    // type_: "Humidity" as const,
-
-    type_: 1,
+    value: "25",
+    type_: "Humidity" as const,
   },
   {
     id: 3,
@@ -30,10 +26,8 @@ export const SENSORS_DATA_MOCK_UP = [
       lat: 34,
       lon: 118,
     },
-    value: 1000,
-    // type_: "Pressure" as const,
-
-    type_: 1,
+    value: "1000",
+    type_: "Pressure" as const,
   },
   {
     id: 4,
@@ -42,10 +36,8 @@ export const SENSORS_DATA_MOCK_UP = [
       lat: 28,
       lon: 81,
     },
-    value: 15,
-    // type_: "Temperature" as const,
-    //
-    type_: 2,
+    value: "15",
+    type_: "Temperature" as const,
   },
   {
     id: 5,
@@ -54,10 +46,8 @@ export const SENSORS_DATA_MOCK_UP = [
       lat: 51,
       lon: 128,
     },
-    value: 12,
-    // type_: "Humidity" as const,
-
-    type_: 2,
+    value: "12",
+    type_: "Humidity" as const,
   },
   {
     id: 6,
@@ -66,10 +56,8 @@ export const SENSORS_DATA_MOCK_UP = [
       lat: 40,
       lon: 74,
     },
-    value: 980,
-    // type_: "Pressure" as const,
-
-    type_: 1,
+    value: "980",
+    type_: "Pressure" as const,
   },
   {
     id: 7,
@@ -78,10 +66,8 @@ export const SENSORS_DATA_MOCK_UP = [
       lat: 34,
       lon: 118,
     },
-    value: 18,
-    // type_: "Temperature" as const,
-
-    type_: 1,
+    value: "18",
+    type_: "Temperature" as const,
   },
   {
     id: 8,
@@ -90,10 +76,8 @@ export const SENSORS_DATA_MOCK_UP = [
       lat: 28,
       lon: 81,
     },
-    value: 22,
-    // type_: "Humidity" as const,
-
-    type_: 1,
+    value: "22",
+    type_: "Humidity" as const,
   },
   {
     id: 9,
@@ -102,10 +86,8 @@ export const SENSORS_DATA_MOCK_UP = [
       lat: 52,
       lon: 13,
     },
-    value: 1020,
-    // type_: "Pressure" as const,
-
-    type_: 2,
+    value: "1020",
+    type_: "Pressure" as const,
   },
   {
     id: 10,
@@ -114,9 +96,7 @@ export const SENSORS_DATA_MOCK_UP = [
       lat: 48,
       lon: 2,
     },
-    value: 14,
-    // type_: "Temperature" as const,
-
-    type_: 1,
+    value: "14",
+    type_: "Temperature" as const,
   },
 ];

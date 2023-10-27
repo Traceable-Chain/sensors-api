@@ -6,15 +6,14 @@ type GeoLocation = {
   lon: number;
 };
 
-// type SensorType = "Temperature" | "Humidity" | "Pressure" | "Digital";
+type SensorType = "Temperature" | "Humidity" | "Pressure" | "Digital";
 
 interface SensorsResponse {
   id: number;
   timestamp: number;
   geolocation: GeoLocation;
-  value: number;
-  // type_: SensorType;
-  type_: number;
+  value: string;
+  type_: SensorType;
 }
 
 router.get<{}, SensorsResponse[]>("/", (_req, res) => {
